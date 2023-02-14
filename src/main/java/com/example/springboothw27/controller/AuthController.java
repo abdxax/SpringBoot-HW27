@@ -23,4 +23,15 @@ public class AuthController {
         myUserSerivce.register(user);
        return ResponseEntity.status(HttpStatus.OK).body("Register done");
     }
+
+    @PostMapping("/login")
+    public ResponseEntity login(){
+
+        return ResponseEntity.status(HttpStatus.OK).body("Welcome");
+    }
+    @PostMapping("/logout")
+    public ResponseEntity logout(){
+
+        return ResponseEntity.status(HttpStatus.OK).body("good bye ");
+    }
 }
